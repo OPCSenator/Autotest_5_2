@@ -31,7 +31,7 @@ class AuthTest {
         $x("//input[@name = 'login']").setValue(registeredUser.getLogin());
         $x("//input[@name = 'password']").setValue(registeredUser.getPassword());
         $x("//span[@class = 'button__text']").click();
-        $("[id=\"root\"]").shouldHave(Condition.text("  Личный кабинет")).click();
+        $("[class=\"heading heading_size_l heading_theme_alfa-on-white\"]").shouldHave(Condition.text("  Личный кабинет")).click();
     }
 
     @Test
